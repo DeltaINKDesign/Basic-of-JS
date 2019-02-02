@@ -1,4 +1,4 @@
-# Basic of JS
+# Basic of JavaScript
 
 Data types
 

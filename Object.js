@@ -1,9 +1,9 @@
 let example1 = {
-    firstName: 'Dylan',
-    lastName: 'Israel',
+    firstName: 'Izabela',
+    lastName: 'Michalak',
     address: {
-        city: 'Austin',
-        state: 'Texas'
+        city: 'Poznan',
+        state: 'Wielkopolska'
     }
 };
 

@@ -5,6 +5,10 @@ let example1 = {
         city: 'Poznan',
         state: 'Wielkopolska'
     }
+	age: 30,
+	dogs: ['Ivy','Royal','Nooah']
 };
 
-console.log(example1.address.city);
+example1.age = 31;
+
+console.log(example1.Object.keys(example1));

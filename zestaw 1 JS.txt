@@ -1,0 +1,94 @@
+1.1
+
+var count = 2;
+
+function testVar() {
+ return (count*count);
+ }
+console.log(testVar());
+
+1.2a
+
+var count = [2,3,4];
+
+var i;
+for (i = 0; i < count.length; i++) { 
+  text = (count[i]*count[i]);
+  console.log(text);
+}
+
+1.2b
+var count = [2,3,4];
+
+
+var i;
+for (let i of count) { 
+  text = (i*i);
+  console.log(text);
+}
+
+1.2c
+
+var count = [2,3,4];
+
+
+var i;
+for (let i in count) { 
+  text = (count[i]*count[i]);
+  console.log(text);
+}
+
+1.2d
+var count = [2,3,4];
+
+count.forEach(function(element) {
+ console.log(element*element);
+})
+
+1.3
+
+var count = [2,3,4];
+
+var squares = count.map( x => x*x )
+console.log(squares);
+
+
+2.1??
+
+var wart = (() =>
+{
+	var boolian = false
+  return function(){
+  return boolian =!boolian
+  }
+})()
+
+console.log(wart())
+console.log(wart())
+console.log(wart())
+console.log(wart())
+
+3.1
+
+function superSum() {
+    let result = 0;
+    for (let i=0; i<arguments.length; i++) {
+        result += arguments[i];
+    }
+    console.log(result);
+}
+
+superSum(1, 2, 3, 4,5);
+
+3.2
+
+const tab = [3,"d",3,"r","e","y",7]
+
+const func = e =>
+{	
+	let s = e.filter(ele =>
+ 	ele/1).reduce((a,b) => a+b)
+  return s;
+}
+
+console.log(func(tab));
